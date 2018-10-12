@@ -1,0 +1,87 @@
+//CONTACT
+
+.contact .wrapper {
+    padding: 6rem 3rem;
+    background: $primary-color;
+    border-top: 3px solid $secondary-color;
+
+    .text-wrapper {
+        margin-bottom: 100px;
+
+        h4 {
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            color: $color-light;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 2px;
+                right: 2px;
+                width: 100px;
+                height: 5px;
+                margin: auto;
+                background: $secondary-color;
+            }
+        }
+
+        p {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+
+    .form-wrapper form {
+        max-width: 500px;
+        margin: auto;
+
+        input,
+        textarea {
+            width: 100%;
+
+            &:focus {
+                border: 1px solid $secondary-color;
+            }
+
+            &[placeholder] {
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+        }
+
+        input[placeholder] {
+            padding-bottom: 10px;
+        }
+
+        button {
+            display: block;
+
+            margin: {
+                top: 10px;
+                left: auto;
+                right: auto;
+            }
+
+            padding: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background: $color-light;
+            border: none;
+
+            &:hover {
+                background: $secondary-color;
+                color: $color-light;
+                transition: 0.5s;
+            }
+
+            &:active {
+                transform: translateY(4px);
+            }
+        }
+    }
+
+
+}

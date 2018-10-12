@@ -1,0 +1,23 @@
+//NAVBAR
+
+.navbar {
+    background: #060613;
+    text-transform: uppercase;
+    border-bottom: 3px solid $secondary-color;
+
+    .navbar__toggler-btn {
+        color: $secondary-color;
+    }
+
+    .navbar__menu {
+        color: $color-light;
+
+        .navbar__item--active {
+            position: relative;
+        }
+
+        .navbar__item--active .navbar__link {
+            color: $secondary-color;
+        }
+    }
+}

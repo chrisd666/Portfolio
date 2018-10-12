@@ -1,0 +1,63 @@
+//CUSTOM
+
+@mixin font-header($size, $weight) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: {
+        family: 'Montserrat',
+            sans-serif;
+        size: 16px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    @include font-header(6rem, 900);
+}
+
+h2 {
+    @include font-header(5rem, 800);
+}
+
+h3 {
+    @include font-header(4rem, 700);
+}
+
+h4 {
+    @include font-header(3rem, 600);
+}
+
+h5 {
+    @include font-header(2rem, 500);
+}
+
+h6 {
+    @include font-header(1.17rem, 400);
+}
+
+
+
+a {
+    color: $color-light;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}

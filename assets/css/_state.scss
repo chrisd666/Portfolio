@@ -1,0 +1,71 @@
+//STATE
+
+@media only screen and (max-width: 768px) {
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        position: relative;
+
+        .header__title {
+            position: absolute;
+            top: 40vh;
+        }
+    }
+
+    .header .header__title #headerName {
+        font-size: 5rem;
+    }
+
+    .navbar {
+        .navbar__menu {
+            .navbar__item--active .navbar__link::after {
+                content: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.3rem;
+    }
+
+    .header .header__title #headerName {
+        font-size: 2rem;
+    }
+
+    .about__info {
+        margin-bottom: 20px;
+    }
+
+    .about .about__info img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .about__services {
+        margin-bottom: 20px;
+    }
+
+    .contact .wrapper {
+        padding: 3rem 1.5rem;
+
+        .form-wrapper form button {
+            width: 100%;
+        }
+    }
+
+    .back-to-top {
+        right: 50px;
+    }
+}

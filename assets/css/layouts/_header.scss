@@ -1,0 +1,45 @@
+//HEADER
+
+.header {
+    height: 100vh;
+    position: relative;
+    background: $primary-color;
+
+
+    .header__particles {
+        height: 100%;
+    }
+
+    .header__title {
+        margin: auto;
+        width: 100%;
+        position: absolute;
+        top: 45vh;
+        text-align: center;
+        z-index: 1;
+
+
+        #headerName {
+            z-index: 99;
+            color: #fff;
+
+            font: {
+                family: 'Raleway',
+                    sans-serif;
+                size: 6rem;
+                weight: 900;
+            }
+
+            text-transform: uppercase;
+
+        }
+
+        .header__title--blue {
+            color: $secondary-color;
+        }
+
+        .typed-cursor {
+            display: none;
+        }
+    }
+}
